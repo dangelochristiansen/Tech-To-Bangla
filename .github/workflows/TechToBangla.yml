@@ -12,9 +12,6 @@ jobs:
     - name: Tech To Bangla Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/mbahgadgetnew/MBAHGADGET/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/mbahgadgetnew/MBAHGADGET/main/wallpaper.png -OutFile wallpaper.bmp
-        Invoke-WebRequest https://raw.githubusercontent.com/mbahgadgetnew/MBAHGADGET/main/wallpaper.bat -OutFile wallpaper.bat
     - name: Extracting Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect Ke Akun Ngrok.
